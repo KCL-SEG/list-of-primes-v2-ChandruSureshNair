@@ -4,6 +4,9 @@
 def primes(number_of_primes):
     list = []
 
+    if number_of_primes <= 0:
+        raise ValueError('Primes method requires an input of 1 or higher!')
+
     n = 2
     while len(list) < number_of_primes:
         factors = False
